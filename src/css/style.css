@@ -177,3 +177,68 @@ nav {
   box-shadow: 0 0 0 3px rgba(58, 182, 218, 0.6);
   transform: translateY(2px);
 }
+
+/* reasons section */
+.reasons {
+  min-height: 848px;
+  padding: 16px 0 64px 0;
+  background-color: #ffffff;
+}
+
+.reasons .reasons-header {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.reasons .reasons-subheader {
+  margin-top: 32px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222222;
+}
+
+.reasons .reason {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  min-height: 200px;
+}
+
+.reasons .reason .reason-icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 116px;
+  height: 116px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+.reasons .reason .reason-text {
+  width: 372px;
+}
+
+.reasons .reason .reason-text .reason-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1eacc7;
+}
+
+.reasons .reason .reason-text .reason-descr {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  color: #202020;
+}
