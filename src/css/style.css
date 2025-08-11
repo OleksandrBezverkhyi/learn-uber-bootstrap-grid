@@ -223,7 +223,7 @@ nav {
   width: 116px;
   height: 116px;
   background-color: #1eacc7;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .reasons .reason .reason-text {
@@ -241,4 +241,106 @@ nav {
   font-weight: 300;
   line-height: 140%;
   color: #202020;
+}
+
+/* mobile-app section */
+.mobile-app {
+  padding: 48px 0 80px 0;
+  min-height: 864px;
+  background: url('../img/bg/second_bg.png');
+}
+
+.mobile-app-header {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.mobile-app-subheader {
+  margin-top: 32px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222222;
+}
+
+.mobile-app-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #222222;
+}
+
+.mobile-app-features {
+  margin-top: 32px;
+}
+
+.features-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-card {
+  padding: 84px 0 32px 0;
+  width: 320px;
+  height: 280px;
+  /* додай тут, якщо треба */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature-card--1 {
+  background-image: url('../img/cards/card_1.jpg');
+}
+
+.feature-card--2 {
+  background-image: url('../img/cards/card_2.jpg');
+}
+
+.feature-card--3 {
+  background-image: url('../img/cards/card_3.jpg');
+}
+
+.feature-card--4 {
+  background-image: url('../img/cards/card_4.jpg');
+}
+
+.feature-card--5 {
+  background-image: url('../img/cards/card_5.jpg');
+}
+
+.feature-card--6 {
+  background-image: url('../img/cards/card_6.jpg');
+}
+
+.feature-card-text {
+  min-height: 64px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.feature-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 68px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #000000;
 }
