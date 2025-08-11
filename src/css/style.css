@@ -287,14 +287,18 @@ nav {
 .features-col {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
 .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 84px 0 32px 0;
   width: 320px;
   height: 280px;
-  /* додай тут, якщо треба */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -337,8 +341,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 68px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
