@@ -1,89 +1,89 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-Thin.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Thin.ttf) format("ttf");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-ThinItalic.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-ThinItalic.ttf) format("ttf");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-Light.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Light.ttf) format("ttf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-LightItalic.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-LightItalic.ttf) format("ttf");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-Regular.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Regular.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-Italic.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Italic.ttf) format("ttf");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-Medium.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Medium.ttf) format("ttf");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-MediumItalic.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-MediumItalic.ttf) format("ttf");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-Bold.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Bold.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-BoldItalic.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-BoldItalic.ttf) format("ttf");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-Black.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Black.ttf) format("ttf");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url(../../fonts/Roboto-BlackItalic.ttf) format('ttf');
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-BlackItalic.ttf) format("ttf");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -108,31 +108,37 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0 70px;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
   margin: 0;
   list-style: none;
 }
 .menu__item {
   position: relative;
-  padding: 14px 28px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 14px 0;
 }
 .menu__item:not(:last-child)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   height: 50%;
   border-right: 2px dotted black;
 }
 .menu__link {
+  display: inline-block;
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
+  padding: 0 28px;
 }
 .menu__link:hover {
   text-decoration: underline;
@@ -187,8 +193,7 @@ main {
   -webkit-transition: -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: box-shadow 0.1s ease, transform 0.1s ease;
-  transition: box-shadow 0.1s ease, transform 0.1s ease, -webkit-box-shadow 0.1s ease,
-    -webkit-transform 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.1s ease, -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -198,15 +203,15 @@ main {
 }
 .subheader__btn:active {
   -webkit-box-shadow: 0 0 0 3px rgba(58, 182, 218, 0.6);
-  box-shadow: 0 0 0 3px rgba(58, 182, 218, 0.6);
+          box-shadow: 0 0 0 3px rgba(58, 182, 218, 0.6);
   -webkit-transform: translateY(2px);
-  transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .promo {
   padding: 152px 0;
   min-height: 800px;
-  background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
 }
 .promo__title {
   font-size: 60px;
@@ -243,8 +248,7 @@ main {
   -webkit-transition: -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: box-shadow 0.1s ease, transform 0.1s ease;
-  transition: box-shadow 0.1s ease, transform 0.1s ease, -webkit-box-shadow 0.1s ease,
-    -webkit-transform 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.1s ease, -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -254,9 +258,9 @@ main {
 }
 .promo__btn:active {
   -webkit-box-shadow: 0 0 0 3px rgba(58, 182, 218, 0.6);
-  box-shadow: 0 0 0 3px rgba(58, 182, 218, 0.6);
+          box-shadow: 0 0 0 3px rgba(58, 182, 218, 0.6);
   -webkit-transform: translateY(2px);
-  transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .reasons {
@@ -270,11 +274,11 @@ main {
   display: flex;
   margin: 0 auto;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 112px;
   height: 24px;
   font-size: 12px;
@@ -297,11 +301,11 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
   min-height: 200px;
 }
@@ -310,11 +314,11 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 116px;
   height: 116px;
   background-color: #1eacc7;
@@ -338,7 +342,7 @@ main {
 .app {
   padding: 48px 0 80px 0;
   min-height: 864px;
-  background: url('../img/bg/second_bg.png');
+  background: url("../img/bg/second_bg.png");
 }
 .app__label {
   display: -webkit-box;
@@ -346,11 +350,11 @@ main {
   display: flex;
   margin: 0 auto;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 112px;
   height: 24px;
   font-size: 12px;
@@ -382,11 +386,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 
@@ -396,14 +400,14 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 84px 0 32px 0;
   width: 320px;
   height: 280px;
@@ -412,22 +416,22 @@ main {
   background-repeat: no-repeat;
 }
 .feature-card--1 {
-  background-image: url('../img/cards/card_1.jpg');
+  background-image: url("../img/cards/card_1.jpg");
 }
 .feature-card--2 {
-  background-image: url('../img/cards/card_2.jpg');
+  background-image: url("../img/cards/card_2.jpg");
 }
 .feature-card--3 {
-  background-image: url('../img/cards/card_3.jpg');
+  background-image: url("../img/cards/card_3.jpg");
 }
 .feature-card--4 {
-  background-image: url('../img/cards/card_4.jpg');
+  background-image: url("../img/cards/card_4.jpg");
 }
 .feature-card--5 {
-  background-image: url('../img/cards/card_5.jpg');
+  background-image: url("../img/cards/card_5.jpg");
 }
 .feature-card--6 {
-  background-image: url('../img/cards/card_6.jpg');
+  background-image: url("../img/cards/card_6.jpg");
 }
 .feature-card__text {
   min-height: 64px;
@@ -442,13 +446,13 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 26px;
   height: 26px;
   border-radius: 50%;
   background-color: #000000;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
