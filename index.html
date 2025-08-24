@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="./src/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
     <title>Uber</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="header__nav">
         <div class="container">
           <ul class="menu">
-            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">With your own car</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">By company car</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Requirements</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Contacts</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Submit a request</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">With your own car</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">By company car</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Requirements</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Submit a request</a></li>
           </ul>
         </div>
       </nav>
@@ -26,47 +26,47 @@
       <div class="subheader">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 offset-md-1">
-              <a href="#" class="subheader-logo"
-                ><img src="./src/img/logo/logo.png" alt="logo"
-              /></a>
-              <div class="subheader-official">Official Uber partner in Miami</div>
+            <div class="col-md-3 offset-md-1 subheader__col">
+              <a href="#" class="subheader__logo">
+                <img src="./src/img/logo/logo.png" alt="logo" />
+              </a>
+              <div class="subheader__official">Official Uber partner in Miami</div>
             </div>
-            <div class="col-md-2 offset-md-3">
-              <div class="subheader-call">
+            <div class="col-md-2 offset-md-3 subheader__col">
+              <div class="subheader__call">
                 Call us every day
-                <a class="subheader-phone" href="tel:+15551234567">+1 (555) 123-4567</a>
+                <a class="subheader__phone" href="tel:+15551234567">+1 (555) 123-4567</a>
               </div>
             </div>
-            <div class="col-md-2">
-              <button class="subheader-btn" title="request a call">request a call</button>
+            <div class="col-md-2 subheader__col">
+              <button class="subheader__btn" title="request a call">request a call</button>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <section class="promo">
         <div class="container">
           <div class="row">
             <div class="col-md-10 offset-md-1">
-              <h1 class="promo-header">UBER PARTNERS COMPANY!</h1>
-              <h2 class="promo-subheader">DRIVERS WELCOME! BRING YOUR OWN CAR!</h2>
-              <div class="promo-text">
-                <p class="promo-descr">
+              <h1 class="promo__title">UBER PARTNERS COMPANY!</h1>
+              <h2 class="promo__subtitle">DRIVERS WELCOME! BRING YOUR OWN CAR!</h2>
+              <div class="promo__text">
+                <p class="promo__descr">
                   UBER is a dynamically developing company. The company occupies a leading position
                   in the market among taxi companies. The company is completely transparent; you can
                   control all processes in your personal account. Bonus system. In addition to the
                   work performed on orders, the company awards bonuses for peak hours.
                 </p>
-                <p class="promo-descr">
+                <p class="promo__descr">
                   We are one of the partners and have established ourselves as one of the best teams
                   in Miami. Our drivers earn between $3,000 and $5,000 per month.
                 </p>
               </div>
 
-              <button class="promo-btn">Submit a request</button>
+              <button class="promo__btn">Submit a request</button>
             </div>
           </div>
         </div>
@@ -74,141 +74,148 @@
 
       <section class="reasons">
         <div class="container">
-          <h2 class="reasons-header">Advantages</h2>
-          <h3 class="reasons-subheader">8 reasons to start working with us</h3>
+          <div class="reasons__label">Advantages</div>
+          <h3 class="reasons__title">8 reasons to start working with us</h3>
           <div class="row">
-            <div class="col-md-6 reasons-column">
+            <div class="col-md-6 reasons__col">
               <div class="reason">
-                <div class="reason-icon-bg">
+                <div class="reason__icon-bg">
                   <img
                     src="./src/icons/reasons/reason_1.png"
                     alt="automatic payment"
-                    class="reason-icon"
+                    class="reason__icon"
                   />
                 </div>
-                <div class="reason-text">
-                  <h4 class="reason-title">No cash, payment is made automatically</h4>
-                  <div class="reason-descr">
+                <div class="reason__text">
+                  <h3 class="reason__title">No cash, payment is made automatically</h3>
+                  <div class="reason__descr">
                     The cost of the trip is paid by the passenger from a linked bank card, i.e.
                     there are no risks associated with carrying cash for either the passenger or the
                     driver, and you don't need to look for small change.
                   </div>
                 </div>
               </div>
+
               <div class="reason">
-                <div class="reason-icon-bg">
+                <div class="reason__icon-bg">
                   <img
                     src="./src/icons/reasons/reason_2.png"
                     alt="high earnings"
-                    class="reason-icon"
+                    class="reason__icon"
                   />
                 </div>
-                <div class="reason-text">
-                  <h4 class="reason-title">High earnings with guaranteed payouts</h4>
-                  <div class="reason-descr">
+                <div class="reason__text">
+                  <h3 class="reason__title">High earnings with guaranteed payouts</h3>
+                  <div class="reason__descr">
                     We deposit your earnings directly to your personal bank account. No need to
                     register a company, pay business taxes, file returns, or deal with accounting
                     and bank account management.
                   </div>
                 </div>
               </div>
+
               <div class="reason">
-                <div class="reason-icon-bg">
+                <div class="reason__icon-bg">
                   <img
                     src="./src/icons/reasons/reason_3.png"
                     alt="easy connection"
-                    class="reason-icon"
+                    class="reason__icon"
                   />
                 </div>
-                <div class="reason-text">
-                  <h4 class="reason-title">Comfortable, transparent, and simple connection</h4>
-                  <div class="reason-descr">
+                <div class="reason__text">
+                  <h3 class="reason__title">Comfortable, transparent, and simple connection</h3>
+                  <div class="reason__descr">
                     We connect you remotely and free of charge, so you don't need to come to us! You
                     send us copies of your documents, we register you and send you the connection
                     details, and in 1-2 days you can start working!
                   </div>
                 </div>
               </div>
+
               <div class="reason">
-                <div class="reason-icon-bg">
+                <div class="reason__icon-bg">
                   <img
                     src="./src/icons/reasons/reason_4.png"
                     alt="round-the-clock support"
-                    class="reason-icon"
+                    class="reason__icon"
                   />
                 </div>
-                <div class="reason-text">
-                  <h4 class="reason-title">24/7 support</h4>
-                  <div class="reason-descr">
+                <div class="reason__text">
+                  <h3 class="reason__title">24/7 support</h3>
+                  <div class="reason__descr">
                     Uber provides round-the-clock support for drivers via email. If you have any
                     questions, you can always ask them through the online consultation service.
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 reasons-column">
+
+            <div class="col-md-6 reasons__col">
               <div class="reason">
-                <div class="reason-icon-bg">
+                <div class="reason__icon-bg">
                   <img
                     src="./src/icons/reasons/reason_5.png"
                     alt="commission + bonuses"
-                    class="reason-icon"
+                    class="reason__icon"
                   />
                 </div>
-                <div class="reason-text">
-                  <h4 class="reason-title">Commission 8% + BONUSES</h4>
-                  <div class="reason-descr">
+                <div class="reason__text">
+                  <h3 class="reason__title">Commission 8% + BONUSES</h3>
+                  <div class="reason__descr">
                     We have minimal commissions and pay bonuses for every trip, while some of our
                     competitors keep the bonuses for themselves. We work honestly, and drivers earn
                     more with us!
                   </div>
                 </div>
               </div>
+
               <div class="reason">
-                <div class="reason-icon-bg">
+                <div class="reason__icon-bg">
                   <img
                     src="./src/icons/reasons/reason_6.png"
                     alt="work at a convenient time"
-                    class="reason-icon"
+                    class="reason__icon"
                   />
                 </div>
-                <div class="reason-text">
-                  <h4 class="reason-title">Work at a convenient time, no schedules</h4>
-                  <div class="reason-descr">
+                <div class="reason__text">
+                  <h3 class="reason__title">Work at a convenient time, no schedules</h3>
+                  <div class="reason__descr">
                     You simply press the button to log in to start working, and when you decide to
                     finish, you press the button to log out. You can work only in the morning, in
                     the evening, on weekends, or on holidays!
                   </div>
                 </div>
               </div>
+
               <div class="reason">
-                <div class="reason-icon-bg">
+                <div class="reason__icon-bg">
                   <img
                     src="./src/icons/reasons/reason_7.png"
                     alt="large number of orders"
-                    class="reason-icon"
+                    class="reason__icon"
                   />
                 </div>
-                <div class="reason-text">
-                  <h4 class="reason-title">Always a large number of orders</h4>
-                  <div class="reason-descr">
+                <div class="reason__text">
+                  <h3 class="reason__title">Always a large number of orders</h3>
+                  <div class="reason__descr">
                     The app shows where there are currently the most orders and where higher rates
                     apply. You won't have any downtime or empty runs. Our passengers are always
                     pleasant and completely non-confrontational people who are a pleasure to drive.
                   </div>
                 </div>
               </div>
+
               <div class="reason">
-                <div class="reason-icon-bg">
+                <div class="reason__icon-bg">
                   <img
                     src="./src/icons/reasons/reason_8.png"
                     alt="no taxi signs or decals"
-                    class="reason-icon"
+                    class="reason__icon"
                   />
                 </div>
-                <div class="reason-text">
-                  <h4 class="reason-title">No taxi signs or decals</h4>
-                  <div class="reason-descr">
+                <div class="reason__text">
+                  <h3 class="reason__title">No taxi signs or decals</h3>
+                  <div class="reason__descr">
                     You don’t need to repaint your car, add taxi lights, or cover it with stickers
                     to drive with Uber.
                   </div>
@@ -219,53 +226,55 @@
         </div>
       </section>
 
-      <section class="mobile-app">
+      <section class="app">
         <div class="container">
-          <h2 class="mobile-app-header">features</h2>
-          <h3 class="mobile-app-subheader">Uber mobile app</h3>
-          <div class="mobile-app-text">
+          <h2 class="app__label">features</h2>
+          <h3 class="app__title">Uber mobile app</h3>
+          <div class="app__text">
             Place an order, take a trip, and pay for it using your mobile phone
           </div>
-          <div class="row mobile-app-features">
-            <div class="col-md-4 features-col">
+          <div class="row app__features">
+            <div class="col-md-4 app__col">
               <div class="feature-card feature-card--1">
-                <div class="feature-card-text">one-touch ordering</div>
-                <div class="feature-card-icon">
-                  <img src="./src/icons/plus.svg" alt="plus" class="icon-plus" />
+                <div class="feature-card__text">one-touch ordering</div>
+                <div class="feature-card__icon">
+                  <img src="./src/icons/plus.svg" alt="plus" class="feature-card__icon-img" />
                 </div>
               </div>
               <div class="feature-card feature-card--2">
-                <div class="feature-card-text">cashless payment</div>
-                <div class="feature-card-icon">
-                  <img src="./src/icons/plus.svg" alt="plus" class="icon-plus" />
+                <div class="feature-card__text">cashless payment</div>
+                <div class="feature-card__icon">
+                  <img src="./src/icons/plus.svg" alt="plus" class="feature-card__icon-img" />
                 </div>
               </div>
             </div>
-            <div class="col-md-4 features-col">
+
+            <div class="col-md-4 app__col">
               <div class="feature-card feature-card--3">
-                <div class="feature-card-text">reliable supply</div>
-                <div class="feature-card-icon">
-                  <img src="./src/icons/plus.svg" alt="plus" class="icon-plus" />
+                <div class="feature-card__text">reliable supply</div>
+                <div class="feature-card__icon">
+                  <img src="./src/icons/plus.svg" alt="plus" class="feature-card__icon-img" />
                 </div>
               </div>
               <div class="feature-card feature-card--4">
-                <div class="feature-card-text">feedback</div>
-                <div class="feature-card-icon">
-                  <img src="./src/icons/plus.svg" alt="plus" class="icon-plus" />
+                <div class="feature-card__text">feedback</div>
+                <div class="feature-card__icon">
+                  <img src="./src/icons/plus.svg" alt="plus" class="feature-card__icon-img" />
                 </div>
               </div>
             </div>
-            <div class="col-md-4 features-col">
+
+            <div class="col-md-4 app__col">
               <div class="feature-card feature-card--5">
-                <div class="feature-card-text">transparent prices</div>
-                <div class="feature-card-icon">
-                  <img src="./src/icons/plus.svg" alt="plus" class="icon-plus" />
+                <div class="feature-card__text">transparent prices</div>
+                <div class="feature-card__icon">
+                  <img src="./src/icons/plus.svg" alt="plus" class="feature-card__icon-img" />
                 </div>
               </div>
               <div class="feature-card feature-card--6">
-                <div class="feature-card-text">split the cost of the trip</div>
-                <div class="feature-card-icon">
-                  <img src="./src/icons/plus.svg" alt="plus" class="icon-plus" />
+                <div class="feature-card__text">split the cost of the trip</div>
+                <div class="feature-card__icon">
+                  <img src="./src/icons/plus.svg" alt="plus" class="feature-card__icon-img" />
                 </div>
               </div>
             </div>
