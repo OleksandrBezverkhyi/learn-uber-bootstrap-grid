@@ -455,4 +455,56 @@ main {
   height: 26px;
   border-radius: 50%;
   background-color: #000000;
+}
+
+.choice {
+  min-height: 900px;
+  padding: 60px 0 136px 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, #070716), color-stop(56%, transparent)), url("../img/bg/second_bg.png") no-repeat center bottom;
+  background: linear-gradient(to bottom, #070716 56%, transparent 56%), url("../img/bg/second_bg.png") no-repeat center bottom;
+  background-size: cover;
+}
+.choice__label {
+  height: 24px;
+  width: 112px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #070716;
+}
+.choice__title {
+  margin-top: 24px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+.choice__text {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+.choice__img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+.choice__descr {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #222;
 }/*# sourceMappingURL=main.css.map */
