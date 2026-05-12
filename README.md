@@ -1,25 +1,39 @@
-# Finora — Project structure
-
-app/ — Next.js routes and pages
-  (protected)/ — pages for authenticated users (dashboard, transactions, profile)
-  (public)/ — public pages (login, register)
-
-app/api/ — server API routes (auth, transactions, categories, import/export, analytics)
-
-components/ — React UI components grouped by feature
-
-lib/ — server-side utilities and business logic (DB client, validators, helpers)
-
-prisma/ — database schema and migrations (schema.prisma, seed, migrations)
-
-docs/ — documentation and diagrams (manuals, ER diagram)
-
-package.json — project metadata, scripts and dependencies
-
-postcss.config.mjs, tailwind config — styling build config
-
-README.md — project overview and setup instructions
-
-.env (not committed) — environment variables (DATABASE_URL, secrets)
-
-.next/, node_modules/ — build and dependency folders (generated)
+```text
+finora/
+├── app/                        # Next.js App Router (Маршрутизація)
+│   ├── (public)/               # Група маршрутів для авторизації
+│   │   ├── login/              # Сторінка входу
+│   │   └── register/           # Сторінка реєстрації
+│   ├── (protected)/            # Приватні сторінки (вимагають автентифікації)
+│   │   ├── dashboard/          # Головна панель керування
+│   │   ├── transactions/       # Список та фільтрація транзакцій
+│   │   ├── profile/            # Налаштування профілю користувача
+│   │   └── profile/            # Налаштування профілю користувача
+│   ├── api/                    # Serverless ендпоінти (Backend логіка)
+│   │   ├── auth/               # Конфігурація та колбеки авторизації
+│   │   ├── transactions/       # API для операцій з транзакціями
+│   │   └── categories/         # API для категорій витрат/доходів
+│   ├── layout.tsx              # Кореневий лейаут (шрифти, метатеги)
+│   └── page.tsx                # Лендінг (публічна головна сторінка)
+├── components/                 # React компоненти (UI та блоки)
+│   ├── ui/                     # Базові атомарні компоненти (Buttons, Inputs, Modals)
+│   ├── forms/                  # Компоненти форм із валідацією
+│   ├── dashboard/              # Специфічні блоки для дашборду (графіки, віджети)
+│   ├── shared/                 # Спільні елементи (Navbar, Footer, Sidebar)
+│   └── providers/              # Обертки (Theme, Session, QueryProviders)
+├── hooks/                      # Кастомні React хуки (useAuth, useDebounce тощо)
+├── lib/                        # Серверні утиліти та конфігурації
+│   ├── prisma.ts               # Ініціалізація клієнта Prisma (DB)
+│   ├── auth.ts                 # Налаштування стратегій Auth.js
+│   └── utils.ts                # Хелпери (форматування валют, об'єднання класів Tailwind)
+├── prisma/                     # Робота з базою даних
+│   ├── schema.prisma           # Опис моделей даних (Schema-first)
+│   └── seed.ts                 # Скрипт для наповнення БД початковими даними
+├── public/                     # Статичні ресурси (логотипи, іконки, картинки)
+├── schemas/                    # Zod-схеми для спільної валідації (Client & API)
+├── types/                      # Глобальні TypeScript інтерфейси
+├── docs/                       # Проєктна документація (діаграми, ТЗ)
+├── .env                        # Змінні оточення (DATABASE_URL, SECRETS) - НЕ КОМІТИТИ
+├── middleware.ts               # Захист маршрутів на рівні Edge Runtime
+├── next.config.mjs             # Конфігурація Next.js
+└── tailwind.config.ts          # Конфігурація стилів
