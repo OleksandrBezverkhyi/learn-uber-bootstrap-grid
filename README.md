@@ -20,9 +20,6 @@ finora/
 ├─ prisma/              # Схема БД та міграції (schema.prisma, seed)
 ├─ public/              # Статичні файли (логотипи, іконки, зображення)
 ├─ docs/                # Документація та діаграми
-├─ schemas/             # Загальні схеми валідації (Zod)
-├─ hooks/               # Користувацькі React-хуки
-├─ types/               # Глобальні типи/інтерфейси (TS)
 ├─ package.json         # Залежності та npm-скрипти
 ├─ next.config.mjs      # Конфігурація Next.js
 ├─ postcss.config.mjs   # Налаштування CSS-білду
